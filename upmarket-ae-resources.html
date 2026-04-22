@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How to Get Upmarket Support (AU) | AE & AM Guide</title>
+  <style>
+    :root {
+      --sq-black: #1a1a1a;
+      --sq-white: #ffffff;
+      --sq-blue: #006AFF;
+      --sq-blue-light: #e8f0ff;
+      --sq-blue-mid: #c3d9ff;
+      --sq-grey-bg: #f5f6f8;
+      --sq-grey-border: #e0e2e7;
+      --sq-grey-text: #6b7280;
+      --sq-green: #00b975;
+      --sq-green-light: #e6f9f2;
+      --sq-green-dark: #007a4d;
+      --sq-yellow: #f59e0b;
+      --sq-yellow-light: #fff8e6;
+      --sq-red: #ef4444;
+      --sq-red-light: #fef2f2;
+      --sq-purple: #7c3aed;
+      --sq-purple-light: #f0ebff;
+      --sq-teal: #0891b2;
+      --sq-teal-light: #e8f7fb;
+      --radius: 12px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.07);
+      --shadow-hover: 0 6px 20px rgba(0,106,255,0.12);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--sq-grey-bg);
+      color: var(--sq-black);
+      line-height: 1.6;
+    }
+
+    /* ── TOP NAV ── */
+    .topnav {
+      background: var(--sq-black);
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      height: 52px;
+      gap: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .topnav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .topnav-logo svg { width: 22px; height: 22px; }
+    .topnav-divider { width: 1px; height: 20px; background: rgba(255,255,255,0.2); }
+    .topnav-label { color: rgba(255,255,255,0.75); font-size: 13px; font-weight: 500; }
+    .topnav-badge {
+      margin-left: auto;
+      background: var(--sq-green);
+      color: white;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #0f1923 0%, #162640 55%, #0a3355 100%);
+      color: white;
+      padding: 56px 32px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -40px;
+      width: 320px; height: 320px;
+      background: radial-gradient(circle, rgba(0,185,117,0.18) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: 15%;
+      width: 240px; height: 240px;
+      background: radial-gradient(circle, rgba(0,106,255,0.15) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero-inner { max-width: 900px; margin: 0 auto; position: relative; z-index: 1; }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.85);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+    }
+    .hero-eyebrow .dot { width: 6px; height: 6px; background: var(--sq-green); border-radius: 50%; }
+    .hero h1 {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+    .hero h1 span { color: #6ee7b7; }
+    .hero-desc {
+      font-size: 16px;
+      color: rgba(255,255,255,0.72);
+      max-width: 620px;
+      margin-bottom: 28px;
+      line-height: 1.75;
+    }
+    .hero-meta { display: flex; gap: 20px; flex-wrap: wrap; }
+    .hero-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+    }
+    .hero-meta-item svg { width: 14px; height: 14px; opacity: 0.7; }
+
+    /* ── JUMP NAV ── */
+    .jumpnav {
+      background: white;
+      border-bottom: 1px solid var(--sq-grey-border);
+      padding: 0 32px;
+      position: sticky;
+      top: 52px;
+      z-index: 90;
+      overflow-x: auto;
+    }
+    .jumpnav-inner { display: flex; max-width: 1100px; margin: 0 auto; }
+    .jumpnav a {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 14px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--sq-grey-text);
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .jumpnav a:hover { color: var(--sq-blue); border-bottom-color: var(--sq-blue); }
+    .jumpnav a .nav-icon { font-size: 14px; }
+
+    /* ── MAIN ── */
+    .main { max-width: 1100px; margin: 0 auto; padding: 40px 32px 80px; }
+
+    /* ── SECTION ── */
+    .section { margin-bottom: 52px; }
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--sq-grey-border);
+    }
+    .section-icon {
+      width: 42px; height: 42px;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; flex-shrink: 0;
+    }
+    .section-title-block h2 { font-size: 20px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 3px; }
+    .section-title-block p { font-size: 13px; color: var(--sq-grey-text); }
+    .section-intro {
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.8;
+      margin-bottom: 24px;
+      max-width: 820px;
+    }
+
+    /* ── TEAM GRID ── */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 12px;
+    }
+    .team-card {
+      background: white;
+      border: 1px solid var(--sq-grey-border);
+      border-radius: var(--radius);
+      padding: 16px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .team-avatar {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--sq-blue-light);
+      color: var(--sq-blue);
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 10px;
+    }
+    .team-name { font-size: 13px; font-weight: 600; color: var(--sq-black); }
+    .team-focus { font-size: 11px; color: var(--sq-grey-text); margin-top: 3px; }
+
+    /* ── COMPARISON TABLE ── */
+    .compare-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .compare-card {
+      background: white;
+      border: 1px solid var(--sq-grey-border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .compare-header {
+      padding: 14px 20px;
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .compare-header.eso { background: var(--sq-blue); color: white; }
+    .compare-header.gso { background: var(--sq-grey-bg); color: var(--sq-black); border-bottom: 1px solid var(--sq-grey-border); }
+    .compare-list { padding: 8px 0; }
+    .compare-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 20px;
+      font-size: 13.5px;
+      color: #374151;
+      border-bottom: 1px solid var(--sq-grey-border);
+      line-height: 1.5;
+    }
+    .compare-item:last-child { border-bottom: none; }
+    .compare-item .ci { flex-shrink: 0; margin-top: 1px; font-size: 14px; }
+
+    /* ── PHASE STEPS ── */
+    .phase-block {
+      background: white;
+      border: 1px solid var(--sq-grey-border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      margin-bottom: 16px;
+    }
+    .phase-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--sq-grey-border);
+    }
+    .phase-number {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .phase-number.blue { background: var(--sq-blue); color: white; }
+    .phase-number.green { background: var(--sq-green); color: white; }
+    .phase-number.purple { background: var(--sq-purple); color: white; }
+    .phase-title { font-size: 15px; font-weight: 700; }
+    .phase-subtitle { font-size: 12px; color: var(--sq-grey-text); margin-top: 1px; }
+    .phase-body { padding: 4px 0 8px; }
+    .step-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 11px 24px;
+      border-bottom: 1px solid #f3f4f6;
+      font-size: 13.5px;
+      color: #374151;
+      line-height: 1.55;
+    }
+    .step-item:last-child { border-bottom: none; }
+    .step-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+    .step-warn {
+      background: var(--sq-red-light);
+      border-left: 3px solid var(--sq-red);
+    }
+    .step-warn .step-icon::after { content: ''; }
+
+    /* ── DO / DON'T ── */
+    .dos-donts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .dd-card {
+      background: white;
+      border: 1px solid var(--sq-grey-border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .dd-header {
+      padding: 12px 18px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .dd-header.do { background: var(--sq-green-light); color: var(--sq-green-dark); }
+    .dd-header.dont { background: var(--sq-red-light); color: var(--sq-red); }
+    .dd-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 18px;
+      font-size: 13px;
+      color: #374151;
+      border-bottom: 1px solid #f3f4f6;
+      line-height: 1.5;
+    }
+    .dd-item:last-child { border-bottom: none; }
+    .dd-item .di { flex-shrink: 0; font-size: 13px; margin-top: 1px; }
+
+    /* ── CONTACT CARD ── */
+    .contact-strip {
+      background: linear-gradient(135deg, #0f1923, #1a2d4a);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .contact-strip h3 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+    .contact-strip p { font-size: 14px; color: rgba(255,255,255,0.7); max-width: 480px; line-height: 1.6; }
+    .contact-btn {
+      background: var(--sq-green);
+      color: white;
+      padding: 11px 24px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: background 0.15s;
+    }
+    .contact-btn:hover { background: #00a367; }
+
+    /* ── NOTICE ── */
+    .notice {
+      background: var(--sq-blue-light);
+      border: 1px solid var(--sq-blue-mid);
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      font-size: 13px;
+      color: #1a4dbb;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+    .notice svg { width: 16px; height: 16px; flex-shrink: 0; margin-top: 1px; }
+
+    /* Colour themes */
+    .theme-blue .section-icon { background: var(--sq-blue-light); }
+    .theme-green .section-icon { background: var(--sq-green-light); }
+    .theme-purple .section-icon { background: var(--sq-purple-light); }
+    .theme-teal .section-icon { background: var(--sq-teal-light); }
+    .theme-yellow .section-icon { background: var(--sq-yellow-light); }
+
+    /* ── SELLER LIFECYCLE ── */
+    .lifecycle {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      background: white;
+      border: 1px solid var(--sq-grey-border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .lifecycle-stage {
+      flex: 1;
+      min-width: 90px;
+      text-align: center;
+      padding: 14px 8px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--sq-grey-text);
+      border-right: 1px solid var(--sq-grey-border);
+      position: relative;
+    }
+    .lifecycle-stage:last-child { border-right: none; }
+    .lifecycle-stage.active {
+      background: var(--sq-blue);
+      color: white;
+    }
+    .lifecycle-stage.handoff {
+      background: var(--sq-green-light);
+      color: var(--sq-green-dark);
+    }
+    .lifecycle-label { font-size: 10px; opacity: 0.75; margin-top: 2px; font-weight: 400; }
+
+    /* ── FUNCTION CARDS ── */
+    .function-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    .function-card {
+      background: white;
+      border: 1px solid var(--sq-grey-border);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .function-icon { font-size: 28px; margin-bottom: 10px; }
+    .function-title { font-size: 14px; font-weight: 700; margin-bottom: 6px; }
+    .function-desc { font-size: 12.5px; color: var(--sq-grey-text); line-height: 1.5; }
+
+    /* ── DSR STEPS ── */
+    .dsr-steps { display: flex; flex-direction: column; gap: 12px; }
+    .dsr-step {
+      background: white;
+      border: 1px solid var(--sq-grey-border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      box-shadow: var(--shadow);
+    }
+    .dsr-step-num {
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      background: var(--sq-blue);
+      color: white;
+      font-size: 13px;
+      font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .dsr-step-body { flex: 1; }
+    .dsr-step-title { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+    .dsr-step-desc { font-size: 13px; color: #374151; line-height: 1.55; }
+    .dsr-step-desc ul { margin-top: 6px; padding-left: 18px; }
+    .dsr-step-desc ul li { margin-bottom: 3px; }
+    .dsr-note {
+      background: var(--sq-green-light);
+      border: 1px solid #6ee7b7;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 12.5px;
+      color: var(--sq-green-dark);
+      margin-top: 10px;
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+
+    /* ── SELL BLOCK ── */
+    .sell-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .sell-card {
+      background: white;
+      border: 1px solid var(--sq-grey-border);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      box-shadow: var(--shadow);
+    }
+    .sell-card-icon { font-size: 22px; margin-bottom: 10px; }
+    .sell-card-title { font-size: 14px; font-weight: 700; margin-bottom: 8px; }
+    .sell-card-body { font-size: 13.5px; color: #374151; line-height: 1.65; }
+
+    /* ── QUICK LINKS ── */
+    .quicklinks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .ql-card {
+      background: white;
+      border: 1px solid var(--sq-grey-border);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      text-decoration: none;
+      color: var(--sq-black);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: var(--shadow);
+      transition: box-shadow 0.15s, border-color 0.15s, transform 0.12s;
+    }
+    .ql-card:hover { box-shadow: var(--shadow-hover); border-color: var(--sq-blue-mid); transform: translateY(-1px); }
+    .ql-icon { font-size: 20px; flex-shrink: 0; }
+    .ql-label { font-size: 13px; font-weight: 600; }
+    .ql-sub { font-size: 11px; color: var(--sq-grey-text); margin-top: 1px; }
+
+    /* ── TIERS ── */
+    .tier-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .tier-card {
+      background: white;
+      border: 1px solid var(--sq-grey-border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .tier-header {
+      padding: 14px 18px;
+      font-size: 15px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .tier-header.half { background: var(--sq-teal-light); color: var(--sq-teal); }
+    .tier-header.existing { background: var(--sq-blue-light); color: var(--sq-blue); }
+    .tier-header.double { background: var(--sq-purple-light); color: var(--sq-purple); }
+    .tier-profile {
+      padding: 10px 18px;
+      font-size: 12px;
+      color: var(--sq-grey-text);
+      background: var(--sq-grey-bg);
+      border-bottom: 1px solid var(--sq-grey-border);
+      font-style: italic;
+      line-height: 1.5;
+    }
+    .tier-list { padding: 8px 0; }
+    .tier-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 7px 18px;
+      font-size: 12.5px;
+      color: #374151;
+      border-bottom: 1px solid #f3f4f6;
+      line-height: 1.45;
+    }
+    .tier-item:last-child { border-bottom: none; }
+    .tier-item .ti { flex-shrink: 0; font-size: 12px; margin-top: 1px; }
+
+    /* ── DOCS / COMMS CARDS ── */
+    .doc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 14px;
+    }
+    .doc-card {
+      background: white;
+      border: 1px solid var(--sq-grey-border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+    }
+    .doc-card-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .doc-icon {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 17px; flex-shrink: 0;
+    }
+    .doc-title { font-size: 14px; font-weight: 700; }
+    .doc-golink {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--sq-blue);
+      background: var(--sq-blue-light);
+      padding: 2px 7px;
+      border-radius: 4px;
+      margin-left: 4px;
+      text-decoration: none;
+    }
+    .doc-body { font-size: 13px; color: #374151; line-height: 1.65; }
+    .doc-body ul { margin-top: 6px; padding-left: 16px; }
+    .doc-body ul li { margin-bottom: 3px; }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: var(--sq-black);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 24px 32px;
+      font-size: 12px;
+    }
+    .footer a { color: rgba(255,255,255,0.6); text-decoration: none; }
+    .footer a:hover { color: white; }
+
+    @media (max-width: 700px) {
+      .hero { padding: 36px 20px 32px; }
+      .hero h1 { font-size: 26px; }
+      .main { padding: 28px 16px 60px; }
+      .compare-wrap, .dos-donts, .function-grid, .sell-grid { grid-template-columns: 1fr; }
+      .lifecycle { overflow-x: auto; flex-wrap: nowrap; }
+      .team-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+      .contact-strip { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="topnav">
+  <a class="topnav-logo" href="#">
+    <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="28" height="28" rx="6" fill="white"/>
+      <rect x="7" y="7" width="14" height="14" rx="2" fill="#1a1a1a"/>
+    </svg>
+  </a>
+  <div class="topnav-divider"></div>
+  <span class="topnav-label">Global Sales Ops · Upmarket Strategy</span>
+  <span class="topnav-badge">AE & AM Guide</span>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow"><span class="dot"></span> AU Project Management Team</div>
+    <h1>How to Get<br/><span>Upmarket Support (AU)</span></h1>
+    <p class="hero-desc">
+      Your guide to engaging AU Project Management Team — when to loop us in,
+      how to get the best results, and what to expect at every stage of the deal cycle.
+    </p>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        Updated December 2025
+      </div>
+      <div class="hero-meta-item">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0"/></svg>
+        For AEs, AMs & Internal Stakeholders
+      </div>
+      <div class="hero-meta-item">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        AU PM team · Global Seller Onboarding Team · Upmarket PM
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JUMP NAV -->
+<nav class="jumpnav">
+  <div class="jumpnav-inner">
+    <a href="#quicklinks"><span class="nav-icon">🔗</span> Quick Links</a>
+    <a href="#who-we-are"><span class="nav-icon">👋</span> Who We Are</a>
+    <a href="#what-we-do"><span class="nav-icon">🦺</span> What We Do</a>
+    <a href="#eso-vs-gso"><span class="nav-icon">🤷</span> PM vs. GSOT</a>
+    <a href="#tiers"><span class="nav-icon">📶</span> Support Tiers</a>
+    <a href="#roe"><span class="nav-icon">📃</span> Rules of Engagement</a>
+    <a href="#best-practices"><span class="nav-icon">🙌</span> Best Practices</a>
+    <a href="#dos-donts"><span class="nav-icon">✅</span> Do's & Don'ts</a>
+    <a href="#docs"><span class="nav-icon">📄</span> Documentation</a>
+    <a href="#comms"><span class="nav-icon">💬</span> Communication</a>
+    <a href="#closeout"><span class="nav-icon">🏁</span> Project Closeout</a>
+    <a href="#dsr"><span class="nav-icon">📋</span> File a DSR</a>
+    <a href="#selling"><span class="nav-icon">💰</span> Selling PM Services</a>
+    <a href="#contact"><span class="nav-icon">✉️</span> Get in Touch</a>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main class="main">
+
+  <div class="notice">
+    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    <span>This page is for <strong>AEs, AMs, and internal stakeholders</strong>. It covers how to engage the AU PM team effectively and what to expect throughout the deal lifecycle. For the internal PM team resource hub, see <strong>go/upmarket-pm</strong>.</span>
+  </div>
+
+  <!-- ── PRICING ALERT BOX ── -->
+  <div style="background:white; border:2px solid #006AFF; border-radius:12px; padding:24px 28px; margin-bottom:28px; box-shadow:0 4px 16px rgba(0,106,255,0.1);">
+    <div style="display:flex; align-items:flex-start; gap:14px;">
+      <div style="width:40px;height:40px;background:var(--sq-blue);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">💰</div>
+      <div>
+        <div style="font-size:16px;font-weight:700;color:var(--sq-black);margin-bottom:10px;">How PM Services Pricing & Scoping Works</div>
+        <p style="font-size:14px;color:#374151;line-height:1.75;margin-bottom:12px;">
+          All AU Project Management services are priced and scoped exclusively by the AU PM team. PM services are bespoke — pricing is based on deal complexity, number of locations, technical requirements, and the level of support required. To receive a quote, engage the AU PM team via a DSR as early in the deal cycle as possible. The PM assigned to your deal will assess the scope and produce a custom <strong>Statement of Work (SOW)</strong> outlining services and pricing for inclusion in the contract.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+          <div style="background:#fef2f2;border:1px solid #fca5a5;border-radius:8px;padding:10px 14px;font-size:13px;color:#991b1b;font-weight:600;display:flex;gap:8px;align-items:flex-start;flex:1;min-width:220px;">
+            <span style="flex-shrink:0;">🚫</span>
+            <span>No deal should be quoted for PM services without a quote coming directly from the AU PM team.</span>
+          </div>
+          <div style="background:#fef2f2;border:1px solid #fca5a5;border-radius:8px;padding:10px 14px;font-size:13px;color:#991b1b;font-weight:600;display:flex;gap:8px;align-items:flex-start;flex:1;min-width:220px;">
+            <span style="flex-shrink:0;">🚫</span>
+            <span>No Scope of Work (SOW) is to be defined, authored, or modified by anyone other than the AU PM team.</span>
+          </div>
+          <div style="background:var(--sq-green-light);border:1px solid #6ee7b7;border-radius:8px;padding:10px 14px;font-size:13px;color:var(--sq-green-dark);font-weight:600;display:flex;gap:8px;align-items:flex-start;flex:1;min-width:220px;">
+            <span style="flex-shrink:0;">✅</span>
+            <span>Discounting can be discussed with your direct lead — no PM leadership approval required.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── QUICK LINKS ── -->
+  <section class="section theme-blue" id="quicklinks">
+    <div class="section-header">
+      <div class="section-icon">🔗</div>
+      <div class="section-title-block">
+        <h2>Quick Links & Support Articles</h2>
+        <p>Key resources referenced throughout this guide — bookmark this section for fast access</p>
+      </div>
+    </div>
+    <div class="quicklinks-grid">
+      <a class="ql-card" href="https://docs.google.com/document/d/1QNvnjgRqZyJCd1sg6FMlAST8qNxDbz_jdWVoEQzJNEg/edit?tab=t.0" target="_blank" rel="noopener">
+        <span class="ql-icon">📜</span>
+        <div><div class="ql-label">International Upmarket Implementation ROE</div><div class="ql-sub">Internal GSO · Source of Truth</div></div>
+      </a>
+      <a class="ql-card" href="https://docs.google.com/presentation/d/1ZBUEKAWufr748zwV80cbmTGFzg6TYrbkCGrkee4CfKE/edit" target="_blank" rel="noopener">
+        <span class="ql-icon">🎯</span>
+        <div><div class="ql-label">PM Services Pitch Deck</div><div class="ql-sub">AU 2025</div></div>
+      </a>
+      <a class="ql-card" href="#dsr">
+        <span class="ql-icon">📤</span>
+        <div><div class="ql-label">How to File a DSR</div><div class="ql-sub">Step-by-step guide ↓</div></div>
+      </a>
+      <a class="ql-card" href="https://docs.google.com/document/d/1iGEjyXr_1lVD9Lktdb-HUx0iW3KpeRDmNiHZjCVXVkk/edit" target="_blank" rel="noopener">
+        <span class="ql-icon">📖</span>
+        <div><div class="ql-label">PM Playbook</div><div class="ql-sub">GSO Playbook · Upmarket</div></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── WHO WE ARE ── -->
+  <section class="section theme-blue" id="who-we-are">
+    <div class="section-header">
+      <div class="section-icon">👋</div>
+      <div class="section-title-block">
+        <h2>Who We Are</h2>
+        <p>Meet the AU Project Management Team team</p>
+      </div>
+    </div>
+    <p class="section-intro">
+      The AU Project Management team is a dedicated group of Project Managers embedded within the Global Seller Onboarding team. We specialise in managing complex, high-value upmarket implementations from pre-sale all the way through to post-go-live handoff. Think of us as your implementation partner — we work alongside you and your seller to scope, plan, and deliver projects that a standard CSM or AM engagement simply isn't built to handle. We're a small, focused team, which means when you bring us in, you get genuine expertise and dedicated attention on your deal.
+    </p>
+  </section>
+
+  <!-- ── WHAT WE DO ── -->
+  <section class="section theme-teal" id="what-we-do">
+    <div class="section-header">
+      <div class="section-icon">🦺</div>
+      <div class="section-title-block">
+        <h2>What We Do</h2>
+        <p>Our three core functions and where we sit in the seller lifecycle</p>
+      </div>
+    </div>
+    <p class="section-intro">
+      The AU PM team operates across three primary function areas — product and vertical expertise, project management and scoping, and implementation and training. We sit at the heart of the deal cycle, stepping in at Implementation and carrying the relationship through to a clean handoff. We do not own product demos — that's SAMPS territory — but everything from scoping through to post-go-live learnings is our domain. Here's how that maps onto the seller lifecycle and what each function covers in practice.
+    </p>
+
+    <div class="function-grid">
+      <div class="function-card">
+        <div class="function-icon">🍔🛍️🦷</div>
+        <div class="function-title">Product & Vertical Expertise</div>
+        <div class="function-desc">Deep knowledge across F&B, Retail, Payplat, SFF, and more. We understand the nuances of each vertical and tailor our approach accordingly.</div>
+      </div>
+      <div class="function-card">
+        <div class="function-icon">📋</div>
+        <div class="function-title">Project Management & Scoping</div>
+        <div class="function-desc">We scope implementations, build project plans, validate technical feasibility, and keep every stakeholder aligned from kick-off to go-live.</div>
+      </div>
+      <div class="function-card">
+        <div class="function-icon">🛠️</div>
+        <div class="function-title">Implementation & Training</div>
+        <div class="function-desc">We lead hands-on implementation, deliver bespoke seller-facing training, and coordinate with 3P partners to ensure a smooth, on-time deployment.</div>
+      </div>
+    </div>
+
+    <p style="font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--sq-grey-text); margin-bottom:10px;">Where the AU PM team sits in the Seller Lifecycle</p>
+    <div class="lifecycle">
+      <div class="lifecycle-stage">Source<div class="lifecycle-label">BDR</div></div>
+      <div class="lifecycle-stage">Pitch<div class="lifecycle-label">AE</div></div>
+      <div class="lifecycle-stage">Solution<div class="lifecycle-label">AE + SAMPS</div></div>
+      <div class="lifecycle-stage">Pilot<div class="lifecycle-label">AE + PM</div></div>
+      <div class="lifecycle-stage">Contract<div class="lifecycle-label">AE</div></div>
+      <div class="lifecycle-stage active">Implement<div class="lifecycle-label">PM leads</div></div>
+      <div class="lifecycle-stage handoff">Establish<div class="lifecycle-label">Handoff → AM</div></div>
+      <div class="lifecycle-stage">Retain<div class="lifecycle-label">AM</div></div>
+      <div class="lifecycle-stage">Grow<div class="lifecycle-label">AM</div></div>
+    </div>
+    <p style="font-size:12px; color:var(--sq-grey-text); margin-top:8px;">⚠️ Note: PM does not handle demos with sellers — SAMPS owns product demos.</p>
+  </section>
+
+  <!-- ── AU PM team VS Global Seller Onboarding Team ── -->
+  <section class="section theme-green" id="eso-vs-gso">
+    <div class="section-header">
+      <div class="section-icon">🤷</div>
+      <div class="section-title-block">
+        <h2>AU PM team vs. Global Seller Onboarding Team — Which Team Is Right for Your Deal?</h2>
+        <p>How to correctly escalate your deals to the right team</p>
+      </div>
+    </div>
+    <p class="section-intro">
+      Upmarket deals are those requiring specialised scoping that meet or exceed the GPV thresholds below. For multi-merchant-type opportunities, the thresholds apply to <strong>total GPV across the group</strong>. There are no procedural pre-requirements to engage — no IDV, MT, SaaS, menu, or contract requirements. The AU PM team should be engaged as soon as the seller signals buying intent and "next steps" come into the picture. Salesforce will automatically route the DSR to a streamlined upmarket form with fewer fields.
+    </p>
+
+    <!-- Thresholds -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px;">
+      <div style="background:white;border:1px solid var(--sq-grey-border);border-radius:10px;padding:16px 18px;text-align:center;box-shadow:var(--shadow);">
+        <div style="font-size:22px;margin-bottom:6px;">🇦🇺</div>
+        <div style="font-size:18px;font-weight:700;color:var(--sq-blue);">$10M GPV+</div>
+        <div style="font-size:12px;color:var(--sq-grey-text);margin-top:4px;">Australia (AU)</div>
+        <div style="font-size:11px;color:var(--sq-blue);margin-top:6px;font-weight:600;">or Franchise Suite</div>
+      </div>
+      <div style="background:white;border:1px solid var(--sq-grey-border);border-radius:10px;padding:16px 18px;text-align:center;box-shadow:var(--shadow);">
+        <div style="font-size:22px;margin-bottom:6px;">🇬🇧</div>
+        <div style="font-size:18px;font-weight:700;color:var(--sq-blue);">£7M GPV+</div>
+        <div style="font-size:12px;color:var(--sq-grey-text);margin-top:4px;">United Kingdom (GB)</div>
+      </div>
+      <div style="background:white;border:1px solid var(--sq-grey-border);border-radius:10px;padding:16px 18px;text-align:center;box-shadow:var(--shadow);">
+        <div style="font-size:22px;margin-bottom:6px;">🇪🇺</div>
+        <div style="font-size:18px;font-weight:700;color:var(--sq-blue);">€5M GPV+</div>
+        <div style="font-size:12px;color:var(--sq-grey-text);margin-top:4px;">EU (IE / FR / ES)</div>
+      </div>
+    </div>
+
+    <div class="compare-wrap">
+      <div class="compare-card">
+        <div class="compare-header eso">🏢 Upmarket PM Support — AU PM team</div>
+        <div class="compare-list">
+          <div class="compare-item"><span class="ci">💰</span> Meets or exceeds regional GPV threshold (AU $10M / GB £7M / EU €5M)</div>
+          <div class="compare-item"><span class="ci">🔧</span> Requires specialised scoping and implementation planning</div>
+          <div class="compare-item"><span class="ci">💻</span> Technical use case — Square developer platform, APIs, or 3P integration</div>
+          <div class="compare-item"><span class="ci">🏪</span> Square for Franchises (SFF) deal</div>
+          <div class="compare-item"><span class="ci">⚙️</span> Custom developed solution required</div>
+          <div class="compare-item"><span class="ci">📐</span> Needs scoping, solution validation, technical feasibility, or early-stage project planning</div>
+          <div class="compare-item"><span class="ci">🛠️</span> 3P onsite quote or dispatch (for sellers meeting above criteria)</div>
+          <div class="compare-item"><span class="ci">📌</span> Fixed-engagement — no indefinite or ongoing PM engagement</div>
+          <div class="compare-item"><span class="ci">🚫</span> <em>No IDV, MT, SaaS, menu, or contract requirements to engage</em></div>
+        </div>
+      </div>
+
+      <div class="compare-card">
+        <div class="compare-header gso">📋 Standard Support — Global Seller Onboarding Team</div>
+        <div class="compare-list">
+          <div class="compare-item"><span class="ci">📊</span> Below regional GPV threshold</div>
+          <div class="compare-item"><span class="ci">✅</span> Simple, straightforward task or onboarding support</div>
+          <div class="compare-item"><span class="ci">🔄</span> 1st Party upsell (e.g. SPOS to RST transition)</div>
+          <div class="compare-item"><span class="ci">🛠️</span> Standard 3P onsite dispatch request</div>
+          <div class="compare-item"><span class="ci">📌</span> Fixed-engagement scope within standard packages</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SUPPORT TIERS ── -->
+  <section class="section theme-teal" id="tiers">
+    <div class="section-header">
+      <div class="section-icon">📶</div>
+      <div class="section-title-block">
+        <h2>How We Right-Size Your Implementation Support</h2>
+        <p>Three tiers of AU PM team engagement based on deal complexity and seller profile</p>
+      </div>
+    </div>
+    <p class="section-intro">
+      Not all upmarket deals require the same level of PM involvement. The AU PM team scales its engagement to match the complexity and strategic importance of each deal — from a light-touch model for simpler implementations right through to white-glove, full-service support for lighthouse sellers. Understanding which tier fits your deal helps you set the right expectations with the seller from day one and ensures the AU PM team is deployed where it creates the most impact.
+    </p>
+    <div class="tier-grid">
+
+      <div class="tier-card">
+        <div class="tier-header half">👍 Half — Light Touch</div>
+        <div class="tier-profile">SMB/mid-market sellers, SFF & Payments, simple AM use-cases (e.g. SPOS → RST migrations). Examples: Tyson Foods, Andersen Bakery, Hometown</div>
+        <div class="tier-list">
+          <div class="tier-item"><span class="ti">•</span> No pre-sales engagement</div>
+          <div class="tier-item"><span class="ti">•</span> Light-touch, key stakeholders only</div>
+          <div class="tier-item"><span class="ti">•</span> Emphasise time-to-go-live, short timeline</div>
+          <div class="tier-item"><span class="ti">•</span> No weekly syncs — essential calls only</div>
+          <div class="tier-item"><span class="ti">•</span> Delegate tasks to Global Seller Onboarding Team, BPO, or 3P</div>
+          <div class="tier-item"><span class="ti">•</span> High-level project plan for timeline alignment</div>
+          <div class="tier-item"><span class="ti">•</span> Implementation pricing/quote as-needed</div>
+          <div class="tier-item"><span class="ti">•</span> AM handoff for sellers qualifying at $1M+ GPV</div>
+          <div class="tier-item"><span class="ti">•</span> Enable sellers to self-serve wherever possible</div>
+        </div>
+      </div>
+
+      <div class="tier-card">
+        <div class="tier-header existing">👏 Existing — Standard Upmarket</div>
+        <div class="tier-profile">Standard upmarket accounts. Examples: CFA Corp, Raw Juice, Northstar Restaurant Group</div>
+        <div class="tier-list">
+          <div class="tier-item"><span class="ti">•</span> High-touch engagement</div>
+          <div class="tier-item"><span class="ti">•</span> Weekly syncs</div>
+          <div class="tier-item"><span class="ti">•</span> Detailed, maintained project plan</div>
+          <div class="tier-item"><span class="ti">•</span> SOW included in contract</div>
+          <div class="tier-item"><span class="ti">•</span> Cross-functional coordination (SAMPS, SE, TAS, AM)</div>
+          <div class="tier-item"><span class="ti">•</span> Enable sellers to own config after initial setup</div>
+          <div class="tier-item"><span class="ti">•</span> Project manage 3P technicians</div>
+          <div class="tier-item"><span class="ti">•</span> Drive timeline, mitigate risks of delays</div>
+        </div>
+      </div>
+
+      <div class="tier-card">
+        <div class="tier-header double">🌟 Double — Lighthouse</div>
+        <div class="tier-profile">Lighthouse/strategic sellers. Examples: Bluestone Lane, Steak n' Shake, Katz's Deli, Sweetgreen</div>
+        <div class="tier-list">
+          <div class="tier-item"><span class="ti">•</span> White-glove, maximum-touch engagement</div>
+          <div class="tier-item"><span class="ti">•</span> Weekly or twice-weekly syncs</div>
+          <div class="tier-item"><span class="ti">•</span> SOW included in contract</div>
+          <div class="tier-item"><span class="ti">•</span> Robust, constantly updated project plan</div>
+          <div class="tier-item"><span class="ti">•</span> Full cross-functional coordination (SAMPS, SE, TAS, AM)</div>
+          <div class="tier-item"><span class="ti">•</span> Early engagement of AM and TAS</div>
+          <div class="tier-item"><span class="ti">•</span> AU PM team owns all account configuration</div>
+          <div class="tier-item"><span class="ti">•</span> Seller-directed implementation support</div>
+          <div class="tier-item"><span class="ti">•</span> Oversee 3P technicians; "on call" during installations</div>
+          <div class="tier-item"><span class="ti">•</span> "Kitchen sink" support approach</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── RULES OF ENGAGEMENT ── -->
+  <section class="section theme-purple" id="roe">
+    <div class="section-header">
+      <div class="section-icon">📃</div>
+      <div class="section-title-block">
+        <h2>Rules of Engagement — What the AU PM Team Owns</h2>
+        <p>Clear scope boundaries across each phase of the deal cycle</p>
+      </div>
+    </div>
+    <p class="section-intro">
+      The AU PM team's Rules of Engagement define exactly what falls within PM scope, what we support, and what sits outside our remit at each stage of the deal. These boundaries exist to prevent scope creep, enable clean handoffs, and ensure consistent delivery across all engagements. If you're unsure whether something falls to PM or another team, this is your reference point.
+    </p>
+
+    <!-- Sale Phase -->
+    <div class="phase-block">
+      <div class="phase-header">
+        <div class="phase-number blue">1</div>
+        <div>
+          <div class="phase-title">During the Sale Phase</div>
+          <div class="phase-subtitle">Pre-sale through to contract close</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        <div class="step-item"><span class="step-icon">✅</span><span>Take ownership of maintaining the <strong>deal brief</strong> (AE initiates creation)</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Partner with SAMPS to assess solution viability — product limitations, feature gaps, and implementation risks</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Partner with AE, SAMPS, and SE to design and propose the recommended solution, including architecture and workarounds</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Define and communicate the implementation approach — timelines, PM engagement model, onboarding expectations</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Author <strong>Statements of Work (SOWs)</strong> covering scope, ownership, known gaps, and technical architecture</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Participate in and travel for in-person pitch meetings when required</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Advise AEs on pricing for PM services; coordinate 1P and 3P onsite installation quotes</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Contribute to RFP responses related to product functionality and implementation</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Define pilot parameters, duration, and success criteria</span></div>
+        <div class="step-item" style="background:#fef2f2; border-left:3px solid #ef4444;"><span class="step-icon">🚫</span><span><strong>Outside PM scope:</strong> Creating CPQ quotes · Sending hardware · Leading product demos · Negotiating SaaS, hardware, or service pricing</span></div>
+      </div>
+    </div>
+
+    <!-- Implementation Phase -->
+    <div class="phase-block">
+      <div class="phase-header">
+        <div class="phase-number green">2</div>
+        <div>
+          <div class="phase-title">During Implementation</div>
+          <div class="phase-subtitle">Post-close through to go-live</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        <div class="step-item"><span class="step-icon">✅</span><span>Create and maintain a detailed project plan; share updates with internal and external stakeholders</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Manage issue escalation — triage, Jira/bug creation, issue tracking, and stakeholder communication</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Own customer-facing comms around escalations and issue resolution; escalate internally to SE, Product, Eng as needed</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Develop bespoke training curriculum; lead or delegate (to Global Seller Onboarding Team or 3P) training sessions including train-the-trainer</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Create seller-facing documentation — training materials, configuration guides, one-pagers</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Schedule and facilitate recurring stakeholder meetings; provide regular status updates and implementation recaps</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>File detailed feature requests to <strong>#sq-seller-feedback-intake</strong>; maintain feature gap and issue tracker</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Coordinate with partners on Square-owned implementation requirements; plan deployments with installation partners</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Dispatch and own communication with 3P vendors — scheduling, escalations, and feedback</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Oversee franchisee/location deliverables for multi-LE deals where Global Seller Onboarding Team packages are sold</span></div>
+        <div class="step-item" style="background:#fef2f2; border-left:3px solid #ef4444;"><span class="step-icon">🚫</span><span><strong>Outside PM scope:</strong> Implementing partner solutions · Coordinating or executing hardware shipments via CPQ</span></div>
+      </div>
+    </div>
+
+    <!-- Post-Implementation Phase -->
+    <div class="phase-block">
+      <div class="phase-header">
+        <div class="phase-number purple">3</div>
+        <div>
+          <div class="phase-title">Post-Implementation</div>
+          <div class="phase-subtitle">Project close through to AM handoff</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        <div class="step-item"><span class="step-icon">✅</span><span>Obtain seller acceptance that implementation scope is complete to enable billing and AM handoff</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Provide initial post-go-live support to ensure a successful transition</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Apply billing templates (for non-CPQ, SFF sellers only)</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Engage TAS for phased rollouts where post-live support is needed while implementation continues at other locations</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Own completion of AM handoff documentation and updates to the deal brief; introduce seller to the inheriting AM</span></div>
+        <div class="step-item"><span class="step-icon">✅</span><span>Conduct internal retrospectives with deal stakeholders when appropriate</span></div>
+        <div class="step-item" style="background:#fef2f2; border-left:3px solid #ef4444;"><span class="step-icon">🚫</span><span><strong>Outside PM scope:</strong> Following up on unpaid invoices · Updating CPT rates · Providing indefinite or ongoing seller support post-go-live</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BEST PRACTICES ── -->
+  <section class="section theme-purple" id="best-practices">
+    <div class="section-header">
+      <div class="section-icon">🙌</div>
+      <div class="section-title-block">
+        <h2>Best Practices for Working with the AU PM team</h2>
+        <p>How to get the best results, by deal phase</p>
+      </div>
+    </div>
+    <p class="section-intro">
+      The single biggest lever you have for a successful AU PM team engagement is timing — the earlier you bring us in, the better the outcome for you and your seller. The AU PM team is most effective when we're involved in shaping the deal, not just inheriting it. Here's what great partnership looks like at each phase of the deal cycle.
+    </p>
+
+    <!-- Phase 1: Early Sales Cycle -->
+    <div class="phase-block">
+      <div class="phase-header">
+        <div class="phase-number blue">1</div>
+        <div>
+          <div class="phase-title">Early Sales Cycle</div>
+          <div class="phase-subtitle">Pre-sale through to deal close</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        <div class="step-item"><span class="step-icon">⏰</span><span><strong>Engage the AU PM team as early as possible.</strong> The sooner you bring us in, the more value we can add — we'll partner with you on solutioning, SOW creation, scoping, and pitching implementation services directly to the seller.</span></div>
+        <div class="step-item"><span class="step-icon">💬</span><span><strong>When in doubt, ping us.</strong> If you're unsure whether a deal warrants AU PM team involvement, just ask. A quick message is far better than waiting until it's too late.</span></div>
+        <div class="step-item"><span class="step-icon">🤝</span><span><strong>Engage SAMPS in tandem.</strong> The AU PM team and SAMPS work together seamlessly — we jointly scope solutions, determine product fit, and uncover feature gaps. Loop both teams in together wherever possible.</span></div>
+        <div class="step-item"><span class="step-icon">📋</span><span><strong>File a DSR with as much detail as possible.</strong> Less is not more here. Include full deal context, link relevant docs, attach call recordings, and provide anything that gives the AU PM team a complete picture from day one.</span></div>
+        <div class="step-item"><span class="step-icon">📞</span><span><strong>Sync with your AU PM rep before introducing them to the seller.</strong> Take 15 minutes to align on deal context, key stakeholders, and agreed next steps before any seller-facing introduction.</span></div>
+        <div class="step-item"><span class="step-icon">🛡️</span><span><strong>Once engaged, the AU PM team is your partner.</strong> You should feel confident handing off implementation responsibility — we'll keep you informed and involved throughout, but your deal is in good hands.</span></div>
+      </div>
+    </div>
+
+    <!-- Phase 2: Implementation -->
+    <div class="phase-block">
+      <div class="phase-header">
+        <div class="phase-number green">2</div>
+        <div>
+          <div class="phase-title">During Implementation</div>
+          <div class="phase-subtitle">Post-close through to go-live</div>
+        </div>
+        <div style="margin-left:auto; background:#fff8e6; border:1px solid #f59e0b; border-radius:8px; padding:8px 14px; font-size:12.5px; color:#92400e; font-weight:600; white-space:nowrap;">
+          ⚠️ $10M+ projects only — deals under this GPV floor will be low touch</div>
+      </div>
+      <div class="phase-body">
+        <div class="step-item"><span class="step-icon">📧</span><span><strong>Include your AU PM rep on all communications.</strong> Once the AU PM rep is involved, every relevant email and message should include them — this is non-negotiable and ensures continuity and proper documentation.</span></div>
+        <div class="step-item"><span class="step-icon">📅</span><span><strong>Weekly syncs are standard.</strong> The AU PM team schedules and leads recurring syncs with the seller. The TAE should be added to this cadence and is expected to join all calls. AU PM team provides written follow-up after every meeting.</span></div>
+        <div class="step-item"><span class="step-icon">📊</span><span><strong>A live project plan will be maintained throughout.</strong> The AU PM team creates and manages the project plan in ClickUp, circulates it to internal and external stakeholders, and updates it regularly. This is your single source of truth on deal progress.</span></div>
+        <div class="step-item"><span class="step-icon">🚨</span><span><strong>The AU PM team owns issue escalation.</strong> Any escalated issues are triaged by the AU PM team — we file Jiras and maintain an Issue Tracker. Route any seller-raised issues or blockers through your AU PM rep, not directly.</span></div>
+        <div class="step-item"><span class="step-icon">🎓</span><span><strong>Training is bespoke and AU PM team-led.</strong> The AU PM team customises onboarding to each seller's specific needs, leads train-the-trainer sessions, and creates seller-facing documentation tailored to their setup.</span></div>
+        <div class="step-item"><span class="step-icon">🏗️</span><span><strong>Onsites are AU PM team-led.</strong> TAEs should not be onsite for implementations or installations unless they have a very specific, pre-agreed role — discussed and aligned in advance with AU PM team, the 3P partner, and other relevant parties.</span></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── DO'S AND DON'TS ── -->
+  <section class="section theme-yellow" id="dos-donts">
+    <div class="section-header">
+      <div class="section-icon">✅</div>
+      <div class="section-title-block">
+        <h2>3P Vendor Communication — Do's & Don'ts</h2>
+        <p>Clear rules of engagement when third-party vendors are involved</p>
+      </div>
+    </div>
+    <p class="section-intro">
+      When a deal involves third-party technology vendors or installers, the rules around communication are strict — and for good reason. Bypassing the AU PM team on 3P comms creates documentation gaps, escalation failures, and performance coaching blind spots that are very difficult to recover from. Follow these guidelines closely.
+    </p>
+    <div class="dos-donts">
+      <div class="dd-card">
+        <div class="dd-header do">✅ Do</div>
+        <div class="dd-item"><span class="di">✅</span> Route all 3P communication through the AU PM team</div>
+        <div class="dd-item"><span class="di">✅</span> Use SFDC or the designated Slack thread for all escalations and documentation</div>
+        <div class="dd-item"><span class="di">✅</span> Discuss any planned onsite involvement with the AU PM team in advance</div>
+        <div class="dd-item"><span class="di">✅</span> Keep the AU PM team copied on all seller and vendor communications</div>
+        <div class="dd-item"><span class="di">✅</span> Maintain visibility at all times — it's key for performance coaching and issue escalation</div>
+      </div>
+      <div class="dd-card">
+        <div class="dd-header dont">🚫 Don't</div>
+        <div class="dd-item"><span class="di">🚫</span> Schedule onsites directly with 3P tech without the AU PM team alignment</div>
+        <div class="dd-item"><span class="di">🚫</span> Communicate with 3P vendors directly or outside Square channels</div>
+        <div class="dd-item"><span class="di">🚫</span> Introduce sellers to 3P technicians or 3P leadership without the AU PM team involvement</div>
+        <div class="dd-item"><span class="di">🚫</span> Go onsite for implementations without a clearly defined, pre-agreed role</div>
+        <div class="dd-item"><span class="di">🚫</span> Take unilateral actions on a deal once the AU PM team is engaged — all decisions should be coordinated</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DOCUMENTATION BEST PRACTICES ── -->
+  <section class="section theme-blue" id="docs">
+    <div class="section-header">
+      <div class="section-icon">📄</div>
+      <div class="section-title-block">
+        <h2>Documentation Best Practices</h2>
+        <p>Key documents the AU PM team owns and maintains throughout the deal cycle</p>
+      </div>
+    </div>
+    <p class="section-intro">
+      Throughout the deal cycle the AU PM team is responsible for producing and maintaining a core set of documents. These aren't just internal records — they're the primary way knowledge is transferred between teams, and the foundation for clean AM handoffs. As an AE or AM, understanding what each document covers and who originates it will help you contribute the right information at the right time.
+    </p>
+    <div class="doc-grid">
+
+      <div class="doc-card">
+        <div class="doc-card-top">
+          <div class="doc-icon" style="background:var(--sq-green-light);">📝</div>
+          <div>
+            <div class="doc-title">Statement of Work (SOW) <a class="doc-golink" href="https://docs.google.com/document/d/1VefpxUwYMo6U6Ixh3EcihFsQw7SmmoEQtW1-BHZ-P1E/edit" target="_blank">go/sow</a></div>
+          </div>
+        </div>
+        <div class="doc-body">Outlines implementation services and price, details task ownership across seller and Square, and highlights workflow changes. Sign-off from the seller is particularly important for SFF deals.
+          <ul>
+            <li>Originated and maintained by PM</li>
+            <li>Included in the contract</li>
+            <li>Sample SOWs: Bareburger, Cookie Plug</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-card-top">
+          <div class="doc-icon" style="background:var(--sq-teal-light);">📊</div>
+          <div><div class="doc-title">Project Plan</div></div>
+        </div>
+        <div class="doc-body">Developed early in the deal cycle and maintained throughout. Tracks milestones, task ownership, location deployment, and implementation progress. Shared with internal and external stakeholders as the single source of truth.
+          <ul>
+            <li>Originated and maintained by PM in ClickUp</li>
+            <li>Examples: LiveNation, Steak Escape, Interdent</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-card-top">
+          <div class="doc-icon" style="background:var(--sq-yellow-light);">📋</div>
+          <div>
+            <div class="doc-title">Deal Brief <a class="doc-golink" href="https://docs.google.com/document/d/1d1_qRJaSGmYJgtVXAMmr483bFiiD1AJHwGer3i3eEFo/edit" target="_blank">go/dealbrief</a></div>
+          </div>
+        </div>
+        <div class="doc-body">A living document that evolves with the deal — containing deal context, solution details, commercials, key stakeholders, and a feature gap tracker. Originated by the AE, maintained by PM, handed off to AM and TAS.
+          <ul>
+            <li><strong>AE initiates</strong>, PM maintains</li>
+            <li>Handed off to AM and TAS at project close</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-card-top">
+          <div class="doc-icon" style="background:var(--sq-purple-light);">🤝</div>
+          <div>
+            <div class="doc-title">AM Handoff Doc <a class="doc-golink" href="https://docs.google.com/document/d/1ilpoBC9p_-teW91U-Jn9Lk7a_KEY4Jw-Mu_Lugq7mw4/edit" target="_blank">go/amhandoff</a></div>
+          </div>
+        </div>
+        <div class="doc-body">Consolidated deal context to facilitate a warm handoff to AM. Included in the Deal Brief for complex deals; used standalone for lower-complexity engagements where a full Deal Brief isn't created.
+          <ul>
+            <li>Completed by PM; AE input required</li>
+            <li>Reviewed in internal handoff meeting with AE, AM, TAS</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── COMMUNICATION BEST PRACTICES ── -->
+  <section class="section theme-green" id="comms">
+    <div class="section-header">
+      <div class="section-icon">💬</div>
+      <div class="section-title-block">
+        <h2>Communication Best Practices</h2>
+        <p>How the AU PM team manages deal comms — and what's expected from you</p>
+      </div>
+    </div>
+    <p class="section-intro">
+      Clear, well-structured communication is one of the most important things the AU PM team manages throughout an engagement. Every deal has a dedicated Slack channel, automatically created at DSR assignment for deals $10M+ GPV, and all deal-related communication should flow through that channel — not DMs. Here's how it works and what good looks like.
+    </p>
+
+    <div class="phase-block">
+      <div class="phase-header">
+        <div class="phase-number blue">1</div>
+        <div>
+          <div class="phase-title">Deal Communication (Internal)</div>
+          <div class="phase-subtitle">Slack-first, with full stakeholder visibility</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        <div class="step-item"><span class="step-icon">💬</span><span>A <strong>deal-specific Slack channel</strong> is automatically created at DSR assignment for $10M+ GPV deals. The Slack feed is visible directly from SFDC within the DSR record.</span></div>
+        <div class="step-item"><span class="step-icon">👥</span><span><strong>Add all deal stakeholders</strong> to the channel from day one — SAMPS, Sales leadership, Account Management, TAS, and any other relevant cross-functional partners.</span></div>
+        <div class="step-item"><span class="step-icon">📌</span><span>PM will <strong>pin key resources</strong> to the channel — SOWs, project plans, call notes, and deal docs. Send all recaps and follow-ups here.</span></div>
+        <div class="step-item"><span class="step-icon">🔄</span><span>The channel is <strong>updated automatically</strong> when DSR status changes. When the project is complete, Slack will prompt for the channel to be archived.</span></div>
+        <div class="step-item"><span class="step-icon">🚫</span><span><strong>All deal comms should be in the channel, not DMs.</strong> Visibility is critical for performance coaching, escalation handling, and continuity if team members change.</span></div>
+        <div class="step-item"><span class="step-icon">🔧</span><span>When relevant, <strong>3P resources can be added to the channel</strong> for real-time visibility and streamlined coordination.</span></div>
+      </div>
+    </div>
+
+    <div class="phase-block">
+      <div class="phase-header">
+        <div class="phase-number green">2</div>
+        <div>
+          <div class="phase-title">Seller Communication (External)</div>
+          <div class="phase-subtitle">PM-owned for the duration of the engagement</div>
+        </div>
+      </div>
+      <div class="phase-body">
+        <div class="step-item"><span class="step-icon">📅</span><span>PM implements <strong>weekly syncs</strong> at project kick-off to discuss progress, blockers, and next steps. Weekly technical syncs with SolEng are added where applicable.</span></div>
+        <div class="step-item"><span class="step-icon">📧</span><span><strong>Email recaps follow every meeting</strong> — notes, progress updates, and action items. Email is preferred for cross-functional visibility, but PM will meet sellers where they're at (sometimes text or phone).</span></div>
+        <div class="step-item"><span class="step-icon">📣</span><span>PM is also responsible for <strong>collecting, tracking, and filing feature requests</strong> for the duration of the project.</span></div>
+        <div class="step-item"><span class="step-icon">⚙️</span><span>PM leverages tools like <strong>call transcripts, recordings, and automation</strong> to streamline and maintain communication quality at scale.</span></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── PROJECT CLOSEOUT ── -->
+  <section class="section theme-teal" id="closeout">
+    <div class="section-header">
+      <div class="section-icon">🏁</div>
+      <div class="section-title-block">
+        <h2>Project Closeout</h2>
+        <p>What happens when implementation wraps up</p>
+      </div>
+    </div>
+    <p class="section-intro">
+      A well-executed closeout is just as important as a strong start. The AU PM team drives the project to a clean conclusion — but we need input from the full deal team to do it well. Here's what happens as your deal moves into closeout.
+    </p>
+    <div class="phase-block">
+      <div class="phase-body">
+        <div class="step-item"><span class="step-icon">✍️</span><span><strong>Seller acceptance is confirmed in writing.</strong> Before closeout is finalised, the AU PM team will obtain written confirmation from the seller that implementation is complete and accepted. This is required before any billing or handoff steps proceed.</span></div>
+        <div class="step-item"><span class="step-icon">💳</span><span><strong>Billing is triggered after seller acceptance.</strong> Once the seller has accepted in writing, implementation services are billed. The AE is responsible for ensuring the commercial side is in order — check with your PM rep if you have questions about timing or invoicing.</span></div>
+        <div class="step-item"><span class="step-icon">🔁</span><span><strong>An internal retro is held with the full deal team.</strong> The AU PM rep will facilitate a post-implementation retro involving the AE, AM, and any other key stakeholders. The goal is to capture lessons learned, document what went well, and surface areas for improvement on future deals. Your presence and candid input make it more valuable.</span></div>
+        <div class="step-item"><span class="step-icon">🤝</span><span><strong>The AU PM team facilitates the AM handoff.</strong> Once implementation is complete and billing is confirmed, the AU PM team manages the structured transition to the Account Manager — ensuring the AM has full context on the seller's setup, preferences, and any outstanding items. As the AE, you'll be asked to contribute context before the handoff is finalised.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW TO FILE A DSR ── -->
+  <section class="section theme-blue" id="dsr">
+    <div class="section-header">
+      <div class="section-icon">📋</div>
+      <div class="section-title-block">
+        <h2>How to File a DSR to Engage the AU PM Team</h2>
+        <p>Engage early — Salesforce does the routing for you</p>
+      </div>
+    </div>
+    <p class="section-intro">
+      There are <strong>no procedural requirements</strong> to submit a DSR for upmarket implementation. Engage the AU PM team as soon as the seller signals buying intent and "next steps" come into the picture. Salesforce will automatically route your DSR to a streamlined upmarket DSR form — no IDV, MT, SaaS, menu, or contract requirement upfront.
+    </p>
+
+    <div class="dsr-steps">
+
+      <div class="dsr-step">
+        <div class="dsr-step-num">1</div>
+        <div class="dsr-step-body">
+          <div class="dsr-step-title">Submit your DSR in Salesforce — anytime after buying intent</div>
+          <div class="dsr-step-desc">From the Opportunity record, click <strong>"Deal Support Request"</strong>. Salesforce will automatically route it to the upmarket DSR form. No need to select a team from a dropdown — the system handles it. Submit as early as you can; earlier engagement leads to better outcomes.</div>
+        </div>
+      </div>
+
+      <div class="dsr-step">
+        <div class="dsr-step-num">2</div>
+        <div class="dsr-step-body">
+          <div class="dsr-step-title">A Senior PM rep will connect with you to debrief</div>
+          <div class="dsr-step-desc">After assignment, a Senior AU PM rep will reach out directly to you — <strong>no ChiliPiper required</strong>. They'll debrief on the deal, ask clarifying questions, and begin solutioning. You don't need to wait for a formal kick-off meeting to start the conversation.</div>
+        </div>
+      </div>
+
+      <div class="dsr-step">
+        <div class="dsr-step-num">3</div>
+        <div class="dsr-step-body">
+          <div class="dsr-step-title">Scoping call — validate the solution and set expectations</div>
+          <div class="dsr-step-desc">A scoping call is scheduled with the seller (and you, the AE) to validate the proposed solution, surface risks, clarify what implementation will and won't deliver, and align on timelines. This call is the foundation of everything that follows — come prepared with your deal context.</div>
+        </div>
+      </div>
+
+      <div class="dsr-step">
+        <div class="dsr-step-num">4</div>
+        <div class="dsr-step-body">
+          <div class="dsr-step-title">Ensure your DSR is complete before handoff</div>
+          <div class="dsr-step-desc">
+            Before the DSR is marked complete, it should contain the following:
+            <ul style="margin-top:10px; padding-left:20px; line-height:1.8;">
+              <li><strong>Account region</strong> (AU, GB, EU)</li>
+              <li><strong>Estimated contract value</strong></li>
+              <li><strong>Agreed SOW</strong> — signed or in progress</li>
+              <li><strong>Rollout plan</strong> — locations, timeline, phasing</li>
+              <li><strong>Proposed solution</strong> — what Square products/services are involved</li>
+              <li><strong>What implementation will deliver</strong> — scope in</li>
+              <li><strong>What implementation won't deliver</strong> — scope out</li>
+              <li><strong>Deal Brief link</strong></li>
+              <li><strong>Retro doc link</strong> (if applicable)</li>
+            </ul>
+          </div>
+          <div class="dsr-note">💡 <span>Deal Points: <strong>1 point per DSA</strong> and <strong>10 points at stage 6 / DSR completion</strong>. There is no maximum — keep filing.</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- DSR Status Track -->
+    <div style="margin-top:32px;">
+      <div style="font-weight:700; font-size:14px; text-transform:uppercase; letter-spacing:0.06em; color:var(--sq-blue); margin-bottom:14px;">DSR Status Lifecycle</div>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center;">
+        <div style="background:#f0f5ff; border:1.5px solid var(--sq-blue); border-radius:20px; padding:6px 16px; font-size:13px; font-weight:600; color:var(--sq-blue);">🔍 Discovery</div>
+        <div style="color:#aaa; font-size:18px;">→</div>
+        <div style="background:#f0f5ff; border:1.5px solid var(--sq-blue); border-radius:20px; padding:6px 16px; font-size:13px; font-weight:600; color:var(--sq-blue);">🧩 Solutioning</div>
+        <div style="color:#aaa; font-size:18px;">→</div>
+        <div style="background:#fff8e1; border:1.5px solid #f5a623; border-radius:20px; padding:6px 16px; font-size:13px; font-weight:600; color:#b47800;">🧪 Pilot</div>
+        <div style="color:#aaa; font-size:18px;">→</div>
+        <div style="background:#e8f5e9; border:1.5px solid #34a853; border-radius:20px; padding:6px 16px; font-size:13px; font-weight:600; color:#1e7e34;">🚀 Implementation</div>
+        <div style="color:#aaa; font-size:18px;">→</div>
+        <div style="background:#e8f5e9; border:1.5px solid #34a853; border-radius:20px; padding:6px 16px; font-size:13px; font-weight:600; color:#1e7e34;">✅ Live</div>
+        <div style="color:#aaa; font-size:18px;">→</div>
+        <div style="background:#f5f5f5; border:1.5px solid #999; border-radius:20px; padding:6px 16px; font-size:13px; font-weight:600; color:#555;">🏁 Implementation Complete</div>
+      </div>
+      <div style="margin-top:8px;">
+        <span style="background:#ffeaea; border:1.5px solid #e53935; border-radius:20px; padding:5px 14px; font-size:13px; font-weight:600; color:#c62828;">⏸ On Hold</span>
+        <span style="font-size:12px; color:#888; margin-left:10px;">Can occur at any stage — flagged if deal is paused or blocked.</span>
+      </div>
+    </div>
+
+    <!-- Governance & SLAs -->
+    <div style="margin-top:36px; background:white; border-radius:12px; padding:24px 28px; box-shadow:0 2px 12px rgba(0,0,0,0.07);">
+      <div style="font-weight:700; font-size:14px; text-transform:uppercase; letter-spacing:0.06em; color:var(--sq-blue); margin-bottom:16px;">⏱ Governance &amp; SLAs</div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:16px;">
+        <div style="border-left:4px solid var(--sq-blue); padding-left:16px;">
+          <div style="font-weight:700; font-size:18px; color:var(--sq-blue);">2 Business Days</div>
+          <div style="font-size:14px; color:#444; margin-top:4px;">DSR acknowledgement after submission — you'll hear from the assigned rep within 2 business days.</div>
+        </div>
+        <div style="border-left:4px solid #34a853; padding-left:16px;">
+          <div style="font-weight:700; font-size:18px; color:#1e7e34;">10 Business Days</div>
+          <div style="font-size:14px; color:#444; margin-top:4px;">Project kickoff after SOW approval and contract signature — implementation begins within 10 business days.</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── SELLING PM SERVICES ── -->
+  <section class="section theme-yellow" id="selling">
+    <div class="section-header">
+      <div class="section-icon">💰</div>
+      <div class="section-title-block">
+        <h2>How to Sell PM Services</h2>
+        <p>How to position PM services when speaking with your sellers</p>
+      </div>
+    </div>
+    <p class="section-intro">
+      Positioning AU PM team's services well at the right moment in the sales cycle can be the difference between a smooth implementation and a chaotic one — for you, for the seller, and for the AM who inherits the account. Implementation services have real value, and you should feel confident articulating that. Here's what you need to know to pitch the AU PM team effectively and get the commercial side right.
+    </p>
+    <div class="sell-grid">
+
+      <div class="sell-card">
+        <div class="sell-card-icon">🎯</div>
+        <div class="sell-card-title">Use the AU PM Team Pitch Deck</div>
+        <div class="sell-card-body">There's a dedicated pitch deck for positioning PM services — find it in the Deal Docs & Tools section of the PM hub. Feel free to make a copy and customise it to your seller's specific needs, vertical, and use case. AU PM team can also help you tailor it before a key meeting.</div>
+      </div>
+
+      <div class="sell-card">
+        <div class="sell-card-icon">📄</div>
+        <div class="sell-card-title">The AU PM team Builds a Custom SOW</div>
+        <div class="sell-card-body">Once you're ready to price implementation services, loop in your AU PM rep and they'll put together a bespoke Statement of Work (SOW) outlining the proposed services and pricing. The SOW is tailored to the seller — there's no standard package. See <strong>go/sow</strong> for the SOW template.</div>
+      </div>
+
+      <div class="sell-card">
+        <div class="sell-card-icon">💬</div>
+        <div class="sell-card-title">Discounting Can Be Discussed Directly</div>
+        <div class="sell-card-body">Any discounting of implementation services can be discussed directly with your lead — no approval needed from PM leadership. There's flexibility in how services are packaged and priced based on the deal context.</div>
+      </div>
+
+      <div class="sell-card">
+        <div class="sell-card-icon">⚠️</div>
+        <div class="sell-card-title">Always Charge Something</div>
+        <div class="sell-card-body">It's always preferable to charge something for implementation services rather than waiving the cost entirely. If full pricing isn't viable, consider adding the value of implementation into an ETF. Charging — even at a discount — signals the value of the work and sets better expectations with the seller.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── GET IN TOUCH ── -->
+  <section class="section" id="contact">
+    <div class="contact-strip">
+      <div>
+        <h3>Ready to engage the AU PM team on a deal?</h3>
+        <p>File a DSR with as much context as possible — deal size, complexity, use case, relevant docs, and call recordings. The more detail you provide, the faster we can get moving. If you're unsure whether your deal qualifies, just reach out directly and we'll give you a quick steer.</p>
+      </div>
+      <a class="contact-btn" href="mailto:kamilla@squareup.com">Contact the Team →</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>AU PM team AE & AM Guide · Global Sales Operations · Square &nbsp;·&nbsp; <a href="mailto:kamilla@squareup.com">Contact Kamilla</a> &nbsp;·&nbsp; For the internal PM resource hub: <strong>go/upmarket-pm</strong></p>
+</footer>
+
+</body>
+</html>
