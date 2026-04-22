@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upmarket Seller Strategy | PM Resource Hub</title>
+  <style>
+    :root {
+      --sq-black: #1a1a1a;
+      --sq-white: #ffffff;
+      --sq-blue: #006AFF;
+      --sq-blue-light: #e8f0ff;
+      --sq-blue-mid: #c3d9ff;
+      --sq-grey-bg: #f5f6f8;
+      --sq-grey-border: #e0e2e7;
+      --sq-grey-text: #6b7280;
+      --sq-green: #00b975;
+      --sq-green-light: #e6f9f2;
+      --sq-yellow: #f59e0b;
+      --sq-yellow-light: #fff8e6;
+      --sq-purple: #7c3aed;
+      --sq-purple-light: #f0ebff;
+      --sq-teal: #0891b2;
+      --sq-teal-light: #e8f7fb;
+      --radius: 12px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.07);
+      --shadow-hover: 0 6px 20px rgba(0,106,255,0.13);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--sq-grey-bg);
+      color: var(--sq-black);
+      line-height: 1.6;
+    }
+
+    /* ── TOP NAV ── */
+    .topnav {
+      background: var(--sq-black);
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      height: 52px;
+      gap: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .topnav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .topnav-logo svg { width: 22px; height: 22px; }
+    .topnav-divider {
+      width: 1px; height: 20px;
+      background: rgba(255,255,255,0.2);
+    }
+    .topnav-label {
+      color: rgba(255,255,255,0.75);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
+    .topnav-badge {
+      margin-left: auto;
+      background: var(--sq-blue);
+      color: white;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #0f1923 0%, #1a2d4a 60%, #0d3068 100%);
+      color: white;
+      padding: 56px 32px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(0,106,255,0.25) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: 20%;
+      width: 200px; height: 200px;
+      background: radial-gradient(circle, rgba(0,185,117,0.12) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero-inner { max-width: 900px; margin: 0 auto; position: relative; z-index: 1; }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.85);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+    }
+    .hero-eyebrow .dot {
+      width: 6px; height: 6px;
+      background: var(--sq-green);
+      border-radius: 50%;
+    }
+    .hero h1 {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+    .hero h1 span { color: #60a5fa; }
+    .hero-desc {
+      font-size: 16px;
+      color: rgba(255,255,255,0.72);
+      max-width: 600px;
+      margin-bottom: 28px;
+      line-height: 1.7;
+    }
+    .hero-meta {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .hero-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+    }
+    .hero-meta-item svg { width: 14px; height: 14px; opacity: 0.7; }
+
+    /* ── JUMP NAV ── */
+    .jumpnav {
+      background: white;
+      border-bottom: 1px solid var(--sq-grey-border);
+      padding: 0 32px;
+      position: sticky;
+      top: 52px;
+      z-index: 90;
+      overflow-x: auto;
+    }
+    .jumpnav-inner {
+      display: flex;
+      gap: 0;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .jumpnav a {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 14px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--sq-grey-text);
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .jumpnav a:hover {
+      color: var(--sq-blue);
+      border-bottom-color: var(--sq-blue);
+    }
+    .jumpnav a .nav-icon { font-size: 14px; }
+
+    /* ── MAIN CONTENT ── */
+    .main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 32px 80px;
+    }
+
+    /* ── SECTION ── */
+    .section {
+      margin-bottom: 48px;
+    }
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--sq-grey-border);
+    }
+    .section-icon {
+      width: 42px; height: 42px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .section-title-block h2 {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--sq-black);
+      margin-bottom: 3px;
+    }
+    .section-title-block p {
+      font-size: 13px;
+      color: var(--sq-grey-text);
+    }
+
+    /* ── CARD GRID ── */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--sq-grey-border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: box-shadow 0.18s, border-color 0.18s, transform 0.15s;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: transparent;
+      transition: background 0.18s;
+    }
+    .card:hover {
+      box-shadow: var(--shadow-hover);
+      border-color: var(--sq-blue-mid);
+      transform: translateY(-2px);
+    }
+    .card:hover::before { background: var(--sq-blue); }
+
+    .card-type {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 2px;
+    }
+    .card-type-icon { font-size: 16px; }
+    .card-type-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--sq-grey-text);
+    }
+    .card-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--sq-black);
+      line-height: 1.4;
+    }
+    .card-note {
+      font-size: 12px;
+      color: var(--sq-yellow);
+      background: var(--sq-yellow-light);
+      padding: 4px 8px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      width: fit-content;
+      font-weight: 500;
+    }
+    .card-arrow {
+      margin-top: auto;
+      padding-top: 6px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 12px;
+      color: var(--sq-blue);
+      font-weight: 500;
+    }
+    .card-arrow svg { width: 12px; height: 12px; }
+
+    /* Colour themes per section */
+    .theme-blue .section-icon { background: var(--sq-blue-light); }
+    .theme-green .section-icon { background: var(--sq-green-light); }
+    .theme-yellow .section-icon { background: var(--sq-yellow-light); }
+    .theme-purple .section-icon { background: var(--sq-purple-light); }
+    .theme-teal .section-icon { background: var(--sq-teal-light); }
+
+    /* ── SECTION INTRO TEXT ── */
+    .section-intro {
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.75;
+      margin-bottom: 20px;
+      max-width: 820px;
+    }
+
+    /* ── ABOUT ESO BLOCK ── */
+    .about-block {
+      background: white;
+      border: 1px solid var(--sq-grey-border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 36px;
+      box-shadow: var(--shadow);
+    }
+    .about-block-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .about-block-header h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--sq-black);
+      letter-spacing: -0.01em;
+    }
+    .about-block-header .about-icon {
+      width: 34px; height: 34px;
+      background: var(--sq-blue-light);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    .about-block p {
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.8;
+    }
+    .about-block p + p { margin-top: 10px; }
+
+    /* ── NOTICE BANNER ── */
+    .notice {
+      background: var(--sq-blue-light);
+      border: 1px solid var(--sq-blue-mid);
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      font-size: 13px;
+      color: #1a4dbb;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+    .notice svg { width: 16px; height: 16px; flex-shrink: 0; margin-top: 1px; }
+
+    /* ── SUB-SECTIONS ── */
+    .sub-section { margin-bottom: 28px; }
+    .sub-section:last-child { margin-bottom: 0; }
+    .sub-section-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--sq-black);
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--sq-grey-border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .sub-section-title .sub-icon { font-size: 14px; }
+
+    /* ── DRIVE FOLDER CARD ── */
+    .card.card-drive {
+      background: var(--sq-grey-bg);
+      border-style: dashed;
+    }
+    .card.card-drive:hover {
+      background: var(--sq-blue-light);
+      border-color: var(--sq-blue);
+      border-style: dashed;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: var(--sq-black);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 24px 32px;
+      font-size: 12px;
+    }
+    .footer a { color: rgba(255,255,255,0.6); text-decoration: none; }
+    .footer a:hover { color: white; }
+
+    @media (max-width: 640px) {
+      .hero { padding: 36px 20px 32px; }
+      .hero h1 { font-size: 26px; }
+      .main { padding: 28px 20px 60px; }
+      .jumpnav { padding: 0 12px; }
+      .jumpnav a { padding: 12px 10px; font-size: 12px; }
+      .card-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="topnav">
+  <a class="topnav-logo" href="#">
+    <!-- Square logo mark -->
+    <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="28" height="28" rx="6" fill="white"/>
+      <rect x="7" y="7" width="14" height="14" rx="2" fill="#1a1a1a"/>
+    </svg>
+  </a>
+  <div class="topnav-divider"></div>
+  <span class="topnav-label">Global Sales Ops · Upmarket Strategy</span>
+  <span class="topnav-badge">🔒 Internal</span>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow"><span class="dot"></span> Upmarket Project Management</div>
+    <h1>PM Resource Hub &<br/><span>Upmarket Seller Strategy</span></h1>
+    <p class="hero-desc">
+      Everything you need to succeed as an Upmarket Project Manager — processes, templates,
+      deal tools, example docs, and project plans — all in one place.
+    </p>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        Last updated: April 2026
+      </div>
+      <div class="hero-meta-item">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0"/></svg>
+        Upmarket PM Team · GSO
+      </div>
+      <div class="hero-meta-item">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        6 sections · 20+ resources
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JUMP NAV -->
+<nav class="jumpnav">
+  <div class="jumpnav-inner">
+    <a href="#processes"><span class="nav-icon">📋</span> Processes & Guidelines</a>
+    <a href="#deal-docs"><span class="nav-icon">📄</span> Deal Docs & Tools</a>
+    <a href="#project-plans"><span class="nav-icon">📊</span> Project Plans</a>
+    <a href="#examples"><span class="nav-icon">💡</span> Deal Examples</a>
+    <a href="#vendors"><span class="nav-icon">🤝</span> 3P Vendor Docs</a>
+    <a href="#franchises"><span class="nav-icon">🏪</span> Square for Franchises</a>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="main">
+
+  <div class="notice">
+    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    <span><strong>For Upmarket PMs only.</strong> These docs contain deal-sensitive materials. Please do not share externally or outside the GSO org without checking with your manager first. For the AE/AM-facing version of this page, see <strong>go/upmarket-ae</strong>.</span>
+  </div>
+
+  <!-- ── ABOUT ESO ── -->
+  <div class="about-block">
+    <div class="about-block-header">
+      <div class="about-icon">🧭</div>
+      <h2>ESO's Approach to Implementation</h2>
+    </div>
+    <p>
+      The Enterprise Seller Operations (ESO) team is a full deal cycle resource — we're involved from pre-sale through to post-implementation to ensure every enterprise engagement is set up for success from the very start. We get involved early, before a deal is signed, to make sure discovery is thorough, solutioning is complete, and nothing is left to chance by the time a contract lands. Our remit covers high-complexity, first-party use cases as well as technical implementations that leverage the Square developer platform, APIs, or third-party integrations requiring deeper architectural input.
+    </p>
+    <p>
+      We lead on all Square for Franchises (SFF) deals, which demand a specialised approach given their multi-location, multi-stakeholder nature. For any deal requiring scoping support, solution validation, technical feasibility assessment, or early-stage project planning, ESO is the right team to loop in. We provide pre-sales deliverables — including sample project plans and Statements of Work — to give sellers and buyers clarity and confidence before a deal closes. We also work closely with AEs to help them position ESO services compellingly and win the right deals.
+    </p>
+    <p>
+      Our approach is built on warm handoffs at every stage, with bespoke services tailored to each seller's unique needs — there is no one-size-fits-all here. We operate on a shared ownership model with the AE/AM, giving everyone greater visibility, control, and fewer surprises throughout the project lifecycle. The result is a more consistent, high-quality experience for the seller, and a stronger foundation for long-term retention.
+    </p>
+  </div>
+
+  <!-- ── SECTION 1: PROCESSES & GUIDELINES ── -->
+  <section class="section theme-blue" id="processes">
+    <div class="section-header">
+      <div class="section-icon">📋</div>
+      <div class="section-title-block">
+        <h2>Processes & Guidelines to Succeed</h2>
+        <p>Core playbooks, training materials, and day-to-day management guides for Enterprise Seller Projects</p>
+      </div>
+    </div>
+    <p class="section-intro">
+      This section covers the core playbooks and training materials that underpin how we manage enterprise seller projects day-to-day. Whether you're new to the team or looking for a reference point on a specific scenario, these docs are your starting point. The GSO Playbook sets the standard for what good looks like at the $10M+ GPV tier — covering cadence, escalation paths, stakeholder management, and delivery expectations. The APAC training deck provides regional context and is a key resource for anyone working with sellers or partners in that market. Read these first, revisit them often.
+    </p>
+    <div class="card-grid">
+
+      <a class="card" href="https://docs.google.com/document/d/1iGEjyXr_1lVD9Lktdb-HUx0iW3KpeRDmNiHZjCVXVkk/edit?tab=t.j711qmea4aa0" target="_blank" rel="noopener">
+        <div class="card-type">
+          <span class="card-type-icon">📖</span>
+          <span class="card-type-label">Playbook · Google Doc</span>
+        </div>
+        <div class="card-title">Day-to-Day Management for Enterprise Seller Projects ($10M/£7M/€5M GPV)</div>
+        <div class="card-arrow">
+          Open in Drive
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </div>
+      </a>
+
+      <a class="card" href="https://docs.google.com/presentation/d/1HPamCK4MYKuuRb9H41pgMPTLot352d0OiOYvfGK59gc/edit?slide=id.g39238a1d1b8_0_501" target="_blank" rel="noopener">
+        <div class="card-type">
+          <span class="card-type-icon">🎓</span>
+          <span class="card-type-label">Training · Slides</span>
+        </div>
+        <div class="card-title">ESO APAC Training Deck</div>
+        <div class="card-arrow">
+          Open in Slides
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ── SECTION 2: DEAL DOCS & TOOLS ── -->
+  <section class="section theme-green" id="deal-docs">
+    <div class="section-header">
+      <div class="section-icon">📄</div>
+      <div class="section-title-block">
+        <h2>Deal Docs & Tools</h2>
+        <p>Templates, briefs, and tools used throughout the deal lifecycle — from scoping to handoff</p>
+      </div>
+    </div>
+    <p class="section-intro">
+      These are the core working documents and tools you'll rely on across active deals. The SOW template and Deal Brief are your go-to starting points for scoping and transitioning any enterprise project — always make a copy and tailor them to the specific deal rather than editing the originals. The Cost Estimator helps you build defensible implementation pricing early in the process, though note it's currently USD only and AU localisation is in progress. The ESO pitch deck is particularly useful when collaborating with AEs to position our services ahead of a close — use it to articulate the value of a dedicated PM and build seller confidence. Finally, the AM Handoff guide is essential reading to ensure a clean, well-documented transition once implementation wraps and the account moves into steady state.
+    </p>
+    <div class="card-grid">
+
+      <a class="card" href="https://docs.google.com/document/d/1VefpxUwYMo6U6Ixh3EcihFsQw7SmmoEQtW1-BHZ-P1E/edit?tab=t.0" target="_blank" rel="noopener">
+        <div class="card-type">
+          <span class="card-type-icon">📝</span>
+          <span class="card-type-label">Template · Google Doc</span>
+        </div>
+        <div class="card-title">Strategic Deal Statement of Work (SOW) Template</div>
+        <div class="card-note">🔗 go/sow</div>
+        <div class="card-arrow">
+          Open Template
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </div>
+      </a>
+
+      <a class="card" href="https://docs.google.com/document/d/1d1_qRJaSGmYJgtVXAMmr483bFiiD1AJHwGer3i3eEFo/edit?tab=t.0" target="_blank" rel="noopener">
+        <div class="card-type">
+          <span class="card-type-icon">📝</span>
+          <span class="card-type-label">Template · Google Doc</span>
+        </div>
+        <div class="card-title">Deal Brief / Deal Transition Plan</div>
+        <div class="card-note">🔗 go/dealbrief</div>
+        <div class="card-arrow">
+          Open Template
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </div>
+      </a>
+
+      <a class="card" href="https://script.google.com/a/macros/squareup.com/s/AKfycbzBxD5V9G9JHdaeRFVGVELJjekx2xa1Tkv4P0ge8cz6Aqpmh3Va2AuWCp-LbhM6KLor/exec" target="_blank" rel="noopener">
+        <div class="card-type">
+          <span class="card-type-icon">🧮</span>
+          <span class="card-type-label">Tool · Google Apps Script</span>
+        </div>
+        <div class="card-title">Enterprise Seller Implementation Cost Estimator</div>
+        <div class="card-note">⚠️ Currently USD only</div>
+        <div class="card-arrow">
+          Open Tool
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </div>
+      </a>
+
+      <a class="card" href="https://docs.google.com/presentation/d/1ZBUEKAWufr748zwV80cbmTGFzg6TYrbkCGrkee4CfKE/edit?slide=id.g394085d2c05_0_362" target="_blank" rel="noopener">
+        <div class="card-type">
+          <span class="card-type-icon">🎯</span>
+          <span class="card-type-label">Pitch Deck · Slides</span>
+        </div>
+        <div class="card-title">ESO Services Pitch Deck — Enterprise Strategic PM Narrative (US 2025)</div>
+        <div class="card-note">⚠️ Needs AU localisation</div>
+        <div class="card-arrow">
+          Open Deck
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </div>
+      </a>
+
+      <a class="card" href="https://docs.google.com/document/d/1ilpoBC9p_-teW91U-Jn9Lk7a_KEY4Jw-Mu_Lugq7mw4/edit?tab=t.0#heading=h.gjdgxs" target="_blank" rel="noopener">
+        <div class="card-type">
+          <span class="card-type-icon">🤝</span>
+          <span class="card-type-label">Handoff Doc · Google Doc</span>
+        </div>
+        <div class="card-title">AM Handoff Guide</div>
+        <div class="card-note">🔗 go/amhandoff</div>
+        <div class="card-arrow">
+          Open Doc
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ── SECTION 3: SAMPLE PROJECT PLANS ── -->
+  <section class="section theme-teal" id="project-plans">
+    <div class="section-header">
+      <div class="section-icon">📊</div>
+      <div class="section-title-block">
+        <h2>Sample Project Plans</h2>
+        <p>Real-world project plans to use as starting templates for new enterprise deals</p>
+      </div>
+    </div>
+    <p class="section-intro">
+      Project plans are living documents and the operational backbone of every implementation we run. They keep the deal on track, surface risks early, and give both internal teams and the seller a single source of truth on where things stand. The examples here span different verticals and deal structures — from large-scale entertainment rollouts to food service and healthcare chains — giving you a range of approaches to draw from. Use them as a starting foundation when spinning up a new plan, then adapt the structure, milestones, and workstreams to fit the specific scope, timeline, and stakeholder requirements of your deal. Always share a live version with your AE/AM so everyone is working from the same document throughout delivery.
+    </p>
+    <div class="card-grid">
+
+      <a class="card" href="https://docs.google.com/spreadsheets/d/1bBEe7OpcUY-RU5GV31wRaQg33UL9MB56/edit?gid=16046512#gid=16046512" target="_blank" rel="noopener">
+        <div class="card-type">
+          <span class="card-type-icon">🎵</span>
+          <span class="card-type-label">Project Plan · Google Sheets</span>
+        </div>
+        <div class="card-title">Live Nation — Project Plan</div>
+        <div class="card-arrow">
+          Open Sheet
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </div>
+      </a>
+
+      <a class="card" href="https://docs.google.com/spreadsheets/d/1G82Kcwf3LNhYS7ZF390A1DigMZiID_SU-mKF_Uz7gXA/edit?gid=0#gid=0" target="_blank" rel="noopener">
+        <div class="card-type">
+          <span class="card-type-icon">🥩</span>
+          <span class="card-type-label">Project Plan · Google Sheets</span>
+        </div>
+        <div class="card-title">Steak Escape — Project Plan</div>
+        <div class="card-arrow">
+          Open Sheet
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </div>
+      </a>
+
+      <a class="card" href="https://docs.google.com/spreadsheets/d/1ou4ZpdFnnqyNvP0FLtowPDEeufaxeSzXgWFOaAkh4yc/edit?gid=2125851315#gid=2125851315" target="_blank" rel="noopener">
+        <div class="card-type">
+          <span class="card-type-icon">🦷</span>
+          <span class="card-type-label">Project Plan · Google Sheets</span>
+        </div>
+        <div class="card-title">Interdent — Project Plan</div>
+        <div class="card-arrow">
+          Open Sheet
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </div>
+      </a>
+
+      <a class="card card-drive" href="https://drive.google.com/drive/folders/1zlHV1TSnuiPNe8feem_72F78X96fXWKH" target="_blank" rel="noopener">
+        <div class="card-type">
+          <span class="card-type-icon">📁</span>
+          <span class="card-type-label">Drive Folder · All Examples</span>
+        </div>
+        <div class="card-title">Project Plan Example Drive — Browse All</div>
+        <div class="card-arrow">
+          Open Folder
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ── SECTION 4: DEAL EXAMPLES ── -->
+  <section class="section theme-yellow" id="examples">
+    <div class="section-header">
+      <div class="section-icon">💡</div>
+      <div class="section-title-block">
+        <h2>Deal Example Docs — Inspiration</h2>
+        <p>Real SOWs, playbooks, and retros from past deals to use as reference and inspiration</p>
+      </div>
+    </div>
+    <p class="section-intro">
+      Real deals, real docs. These examples span a range of verticals — food &amp; beverage, entertainment, healthcare, and more — and reflect the genuine complexity and bespoke nature of the work we do. Use them as inspiration and structural reference when building your own SOWs, playbooks, and retros, not as copy-paste templates. Each deal has its own context, so the goal is to understand the thinking behind the structure rather than replicate it verbatim. Reviewing a couple of examples before starting a new project is a good habit — especially the retros, which capture lessons learned that can help you avoid common pitfalls earlier in your own engagements.
+    </p>
+
+    <!-- Sub-section: SOW Examples -->
+    <div class="sub-section">
+      <div class="sub-section-title"><span class="sub-icon">📋</span> Scope of Work Examples</div>
+      <div class="card-grid">
+
+        <a class="card" href="https://docs.google.com/document/d/1NR3qzSuiCCZM4G6VMLDoMHkzDPOuIzH9S1Bp7Xw_uJI/edit?tab=t.0" target="_blank" rel="noopener">
+          <div class="card-type">
+            <span class="card-type-icon">📋</span>
+            <span class="card-type-label">Sample SOW · Google Doc</span>
+          </div>
+          <div class="card-title">Cookie Plug — Scope of Work</div>
+          <div class="card-arrow">Open Doc <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a class="card" href="https://docs.google.com/document/d/1_AYC3e5MoKBa8FyKFu3An3LydYPTBSfZ7-ZREebNhDU/edit?tab=t.0#heading=h.4c9zpvb0m5t2" target="_blank" rel="noopener">
+          <div class="card-type">
+            <span class="card-type-icon">📋</span>
+            <span class="card-type-label">Sample SOW · Google Doc</span>
+          </div>
+          <div class="card-title">Bareburger — Scope of Work</div>
+          <div class="card-arrow">Open Doc <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a class="card card-drive" href="https://drive.google.com/drive/folders/1QxqJwh1j1wbidSE-6UICSTEiztJQ7Ya8" target="_blank" rel="noopener">
+          <div class="card-type">
+            <span class="card-type-icon">📁</span>
+            <span class="card-type-label">Drive Folder · All SOW Examples</span>
+          </div>
+          <div class="card-title">Scope of Work Example Drive — Browse All</div>
+          <div class="card-arrow">Open Folder <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Sub-section: Implementation Playbooks -->
+    <div class="sub-section">
+      <div class="sub-section-title"><span class="sub-icon">📊</span> Implementation Playbooks</div>
+      <div class="card-grid">
+
+        <a class="card" href="https://docs.google.com/presentation/d/1sQvuAacyWbNSxXrCXwrDLVAZFJ3Y8suJi7jS8xYKbqU/edit?slide=id.p" target="_blank" rel="noopener">
+          <div class="card-type">
+            <span class="card-type-icon">📊</span>
+            <span class="card-type-label">Playbook · Slides</span>
+          </div>
+          <div class="card-title">Bluestone Lane — Implementation Playbook</div>
+          <div class="card-arrow">Open Slides <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a class="card" href="https://docs.google.com/document/d/1toZ1zUg9IFy8IBgePrL3PJD0zUV_pP4i0WLctdSF-KI/edit?tab=t.0#heading=h.vbud16ku0jrf" target="_blank" rel="noopener">
+          <div class="card-type">
+            <span class="card-type-icon">🔧</span>
+            <span class="card-type-label">Playbook · Google Doc</span>
+          </div>
+          <div class="card-title">7 Leaves — Installation Playbook for Installers</div>
+          <div class="card-arrow">Open Doc <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Sub-section: Retros / Post-Mortems -->
+    <div class="sub-section">
+      <div class="sub-section-title"><span class="sub-icon">🔍</span> Retro / Post-Mortem</div>
+      <div class="card-grid">
+
+        <a class="card" href="https://docs.google.com/document/d/1wTUJeIIvrCBylKlG_6AyGTk_zGu5U0n51BQ3grEKDJM/edit?tab=t.0#heading=h.5w6r1juwhpe3" target="_blank" rel="noopener">
+          <div class="card-type">
+            <span class="card-type-icon">🔍</span>
+            <span class="card-type-label">Retro · Google Doc</span>
+          </div>
+          <div class="card-title">Bluestone Lane — Retro / Post-Mortem</div>
+          <div class="card-arrow">Open Doc <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+        <a class="card" href="https://docs.google.com/document/d/1hHhMXjEIl_FEcaMl2Mi532vAXqTpR27_huPsDpkUdzE/edit?tab=t.0#heading=h.6gzv8zrjw1cr" target="_blank" rel="noopener">
+          <div class="card-type">
+            <span class="card-type-icon">🔍</span>
+            <span class="card-type-label">Retro · Google Doc</span>
+          </div>
+          <div class="card-title">Allianz Amphitheater — Retro / Post-Mortem</div>
+          <div class="card-arrow">Open Doc <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></div>
+        </a>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── SECTION 5: 3P VENDOR DOCS ── -->
+  <section class="section theme-purple" id="vendors">
+    <div class="section-header">
+      <div class="section-icon">🤝</div>
+      <div class="section-title-block">
+        <h2>3P Vendor Sample Docs</h2>
+        <p>Installer playbooks, location checklists, and training sign-offs for third-party vendor engagements</p>
+      </div>
+    </div>
+    <p class="section-intro">
+      When a deal involves a third-party vendor for hardware installation, staff training, or on-site support, the PM's role shifts slightly — you're coordinating across more parties, and documentation becomes even more critical. The Live Nation suite here is a strong model for any venue or multi-site deployment where a 3P installer is in scope. The installation playbook sets expectations for the vendor, the location checklist ensures nothing is missed at each site, and the training sign-off provides a formal record of completion. Use these as the baseline structure when onboarding any new 3P partner, and adapt them to match the specific scope and logistics of your engagement.
+    </p>
+    <div class="card-grid">
+
+      <a class="card" href="https://docs.google.com/document/d/1J3G3I93mLHOLS0UKtC8qfktt0etWe_OWliBLDO_CffY/edit?tab=t.0" target="_blank" rel="noopener">
+        <div class="card-type">
+          <span class="card-type-icon">🎵</span>
+          <span class="card-type-label">Playbook · Google Doc</span>
+        </div>
+        <div class="card-title">Live Nation — Installation Playbook</div>
+        <div class="card-arrow">
+          Open Doc
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </div>
+      </a>
+
+      <a class="card" href="https://docs.google.com/document/d/1J_IEmp8fOoU2Bo3j1vcZM9UAqOubHwjox9duUe2NYIU/edit?tab=t.0" target="_blank" rel="noopener">
+        <div class="card-type">
+          <span class="card-type-icon">✅</span>
+          <span class="card-type-label">Checklist · Google Doc</span>
+        </div>
+        <div class="card-title">Live Nation — Installation Location Checklist</div>
+        <div class="card-arrow">
+          Open Doc
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </div>
+      </a>
+
+      <a class="card" href="https://docs.google.com/document/d/1QVM6lPNp_rOC881TTzgl4NjyqiIF7gggHu6MLtsYpbg/edit?tab=t.0" target="_blank" rel="noopener">
+        <div class="card-type">
+          <span class="card-type-icon">✍️</span>
+          <span class="card-type-label">Sign-Off Doc · Google Doc</span>
+        </div>
+        <div class="card-title">Live Nation — Training Sign-Off</div>
+        <div class="card-arrow">
+          Open Doc
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ── SECTION 6: SQUARE FOR FRANCHISES ── -->
+  <section class="section theme-blue" id="franchises">
+    <div class="section-header">
+      <div class="section-icon">🏪</div>
+      <div class="section-title-block">
+        <h2>Square for Franchises</h2>
+        <p>Kick-off templates and materials specifically for franchise-model enterprise clients</p>
+      </div>
+    </div>
+    <p class="section-intro">
+      Square for Franchises is a distinct motion within our team — multi-location, multi-stakeholder, and often multi-market, with a layer of complexity that sets it apart from a standard enterprise deal. Franchisors and franchisees have different priorities, different levels of technical readiness, and often very different relationships with Square. The kick-off template here is purpose-built for SFF engagements and reflects that added complexity, covering franchisor alignment, franchisee onboarding sequencing, and the governance structure needed to manage rollouts at scale. Always start with this deck when kicking off an SFF deal, and make sure both the franchisor and relevant AE/AM are aligned on the plan before any work begins at the franchisee level.
+    </p>
+    <div class="card-grid">
+
+      <a class="card" href="https://docs.google.com/presentation/d/1ktKhsLP1AaK-V3RXTLColG5HeAMv5PfXtZoqIJ0P2EY/edit?slide=id.g3d19af97272_0_287" target="_blank" rel="noopener">
+        <div class="card-type">
+          <span class="card-type-icon">🚀</span>
+          <span class="card-type-label">Kick-Off Template · Slides</span>
+        </div>
+        <div class="card-title">Square for Franchises — Kick-Off Deck Template</div>
+        <div class="card-arrow">
+          Open Slides
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>Upmarket PM Resource Hub · Global Sales Operations · Square &nbsp;·&nbsp; <a href="mailto:kamilla@squareup.com">Contact Kamilla</a> &nbsp;·&nbsp; For the AE/AM-facing version: <strong>go/upmarket-ae</strong></p>
+</footer>
+
+</body>
+</html>
